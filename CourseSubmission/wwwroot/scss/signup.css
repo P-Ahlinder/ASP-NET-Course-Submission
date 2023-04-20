@@ -1,0 +1,41 @@
+﻿.signup-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.signup-main h1 {
+  font-family: "Courgette", cursive;
+  margin-bottom: 30px;
+  margin-top: 1rem;
+}
+.signup-main form {
+  background-color: wheat;
+  padding: 2rem;
+  border-radius: 0.4rem;
+}
+.signup-main form div {
+  margin: 0.25rem;
+  display: flex;
+  flex-direction: column;
+}
+.signup-main form input {
+  width: 400px;
+  height: 22px;
+}
+.signup-main form label {
+  font-size: 16px;
+  font-family: "Asap", sans-serif;
+}
+.signup-main form button {
+  width: 220px;
+  height: 30px;
+  margin: 1rem;
+  font-family: "Courgette", cursive;
+  border-radius: 0.4rem;
+  border: none;
+  transition: ease 0.2s;
+}
+.signup-main form button:hover {
+  opacity: 90%;
+  background-color: dimgray;
+}

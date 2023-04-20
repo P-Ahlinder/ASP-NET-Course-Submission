@@ -1,0 +1,105 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\ahlin\\Desktop\\Repos\\CourseSubmission\\CourseSubmission\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\ahlin\\Desktop\\Repos\\CourseSubmission\\CourseSubmission\\wwwroot\\css\\site.min.css",
+      "PackagePath": "staticwebassets\\css\\site.min.css"
+    },
+    {
+      "Id": "C:\\Users\\ahlin\\Desktop\\Repos\\CourseSubmission\\CourseSubmission\\wwwroot\\css\\site.scss",
+      "PackagePath": "staticwebassets\\css\\site.scss"
+    },
+    {
+      "Id": "C:\\Users\\ahlin\\Desktop\\Repos\\CourseSubmission\\CourseSubmission\\wwwroot\\icons\\loupe.png",
+      "PackagePath": "staticwebassets\\icons\\loupe.png"
+    },
+    {
+      "Id": "C:\\Users\\ahlin\\Desktop\\Repos\\CourseSubmission\\CourseSubmission\\wwwroot\\icons\\shopping-bag.png",
+      "PackagePath": "staticwebassets\\icons\\shopping-bag.png"
+    },
+    {
+      "Id": "C:\\Users\\ahlin\\Desktop\\Repos\\CourseSubmission\\CourseSubmission\\wwwroot\\icons\\user.png",
+      "PackagePath": "staticwebassets\\icons\\user.png"
+    },
+    {
+      "Id": "C:\\Users\\ahlin\\Desktop\\Repos\\CourseSubmission\\CourseSubmission\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\ahlin\\Desktop\\Repos\\CourseSubmission\\CourseSubmission\\wwwroot\\scss\\footer.css",
+      "PackagePath": "staticwebassets\\scss\\footer.css"
+    },
+    {
+      "Id": "C:\\Users\\ahlin\\Desktop\\Repos\\CourseSubmission\\CourseSubmission\\wwwroot\\scss\\footer.min.css",
+      "PackagePath": "staticwebassets\\scss\\footer.min.css"
+    },
+    {
+      "Id": "C:\\Users\\ahlin\\Desktop\\Repos\\CourseSubmission\\CourseSubmission\\wwwroot\\scss\\footer.scss",
+      "PackagePath": "staticwebassets\\scss\\footer.scss"
+    },
+    {
+      "Id": "C:\\Users\\ahlin\\Desktop\\Repos\\CourseSubmission\\CourseSubmission\\wwwroot\\scss\\indexmain.css",
+      "PackagePath": "staticwebassets\\scss\\indexmain.css"
+    },
+    {
+      "Id": "C:\\Users\\ahlin\\Desktop\\Repos\\CourseSubmission\\CourseSubmission\\wwwroot\\scss\\indexmain.min.css",
+      "PackagePath": "staticwebassets\\scss\\indexmain.min.css"
+    },
+    {
+      "Id": "C:\\Users\\ahlin\\Desktop\\Repos\\CourseSubmission\\CourseSubmission\\wwwroot\\scss\\indexmain.scss",
+      "PackagePath": "staticwebassets\\scss\\indexmain.scss"
+    },
+    {
+      "Id": "C:\\Users\\ahlin\\Desktop\\Repos\\CourseSubmission\\CourseSubmission\\wwwroot\\scss\\login.css",
+      "PackagePath": "staticwebassets\\scss\\login.css"
+    },
+    {
+      "Id": "C:\\Users\\ahlin\\Desktop\\Repos\\CourseSubmission\\CourseSubmission\\wwwroot\\scss\\login.min.css",
+      "PackagePath": "staticwebassets\\scss\\login.min.css"
+    },
+    {
+      "Id": "C:\\Users\\ahlin\\Desktop\\Repos\\CourseSubmission\\CourseSubmission\\wwwroot\\scss\\navbar.css",
+      "PackagePath": "staticwebassets\\scss\\navbar.css"
+    },
+    {
+      "Id": "C:\\Users\\ahlin\\Desktop\\Repos\\CourseSubmission\\CourseSubmission\\wwwroot\\scss\\navbar.min.css",
+      "PackagePath": "staticwebassets\\scss\\navbar.min.css"
+    },
+    {
+      "Id": "C:\\Users\\ahlin\\Desktop\\Repos\\CourseSubmission\\CourseSubmission\\wwwroot\\scss\\navbar.scss",
+      "PackagePath": "staticwebassets\\scss\\navbar.scss"
+    },
+    {
+      "Id": "C:\\Users\\ahlin\\Desktop\\Repos\\CourseSubmission\\CourseSubmission\\wwwroot\\scss\\signup.css",
+      "PackagePath": "staticwebassets\\scss\\signup.css"
+    },
+    {
+      "Id": "C:\\Users\\ahlin\\Desktop\\Repos\\CourseSubmission\\CourseSubmission\\wwwroot\\scss\\signup.min.css",
+      "PackagePath": "staticwebassets\\scss\\signup.min.css"
+    },
+    {
+      "Id": "C:\\Users\\ahlin\\Desktop\\Repos\\CourseSubmission\\CourseSubmission\\wwwroot\\scss\\signup.scss",
+      "PackagePath": "staticwebassets\\scss\\signup.scss"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.CourseSubmission.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.CourseSubmission.props",
+      "PackagePath": "build\\CourseSubmission.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.CourseSubmission.props",
+      "PackagePath": "buildMultiTargeting\\CourseSubmission.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.CourseSubmission.props",
+      "PackagePath": "buildTransitive\\CourseSubmission.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

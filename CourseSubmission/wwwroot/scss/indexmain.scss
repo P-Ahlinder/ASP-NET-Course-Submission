@@ -1,0 +1,11 @@
+.index-main{
+    display:flex;
+    flex-direction:column;
+    place-items:center;
+    
+    section{
+        h1{
+            padding:30px;
+        }
+    }
+}

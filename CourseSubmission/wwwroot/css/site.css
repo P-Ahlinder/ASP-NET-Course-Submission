@@ -1,0 +1,23 @@
+﻿@import '/scss/footer.css';
+@import '/scss/navbar.css';
+@import '/scss/indexmain.css';
+@import '/scss/login.css';
+@import '/scss/signup.css';
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Asap:wght@200&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: lightgoldenrodyellow;
+}
+
+p {
+  font-family: "Asap", sans-serif;
+}
+
+h1 {
+  font-family: "Courgette", cursive;
+}

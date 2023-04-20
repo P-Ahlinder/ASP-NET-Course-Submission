@@ -1,0 +1,28 @@
+﻿@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
+header nav {
+  background-color: rgba(163, 163, 163, 0.2862745098);
+  padding: 2rem 2rem;
+  display: flex;
+  justify-content: flex-end;
+}
+header nav .links {
+  transition: ease-in-out 0.2s;
+}
+header nav .links img {
+  transition: ease 0.2s;
+  width: 20px;
+}
+header nav .links img:hover {
+  scale: 1.5;
+}
+header nav .links a {
+  margin: 0rem 1rem;
+  text-decoration: none;
+  color: grey;
+  font-family: "Courgette", cursive;
+  font-size: 18px;
+}
+header nav .links a:hover {
+  color: dimgrey;
+  text-shadow: 0px 1px 5px darkslategray;
+}

@@ -1,0 +1,26 @@
+﻿[
+  {
+    "outputFile": "wwwroot/css/site.css",
+    "inputFile": "wwwroot/css/site.scss"
+  },
+  {
+    "outputFile": "wwwroot/scss/footer.css",
+    "inputFile": "wwwroot/scss/footer.scss"
+  },
+  {
+    "outputFile": "wwwroot/scss/navbar.css",
+    "inputFile": "wwwroot/scss/navbar.scss"
+  },
+  {
+    "outputFile": "wwwroot/scss/indexmain.css",
+    "inputFile": "wwwroot/scss/indexmain.scss"
+  },
+  {
+    "outputFile": "wwwroot/scss/login.css",
+    "inputFile": "wwwroot/scss/login.scss"
+  },
+  {
+    "outputFile": "wwwroot/scss/signup.css",
+    "inputFile": "wwwroot/scss/signup.scss"
+  }
+]

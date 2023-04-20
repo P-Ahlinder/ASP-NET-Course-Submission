@@ -1,0 +1,31 @@
+﻿form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-main {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.login-main button {
+  width: 120px;
+  height: 30px;
+  border: none;
+}
+.login-main .pass {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+.login-main .username {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+.login-main input {
+  width: 300px;
+  height: 30px;
+}

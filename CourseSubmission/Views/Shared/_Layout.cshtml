@@ -1,0 +1,20 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] |  Home</title>
+    <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/CourseSubmission.styles.css" asp-append-version="true" />
+</head>
+<body>
+    <partial name="~/Views/Partials/_Navbar.cshtml" />
+    <div class="container">
+        <main role="main">
+            @RenderBody()
+        </main>
+    </div>
+    <partial name="~/Views/Partials/_Footer.cshtml" />
+    <script src="~/js/site.js" asp-append-version="true"></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+﻿@model UserSignUpVM
+
+
+<div class="signup-main">
+    <h1>Sign up</h1>
+    <form method="post" >
+        <div asp-validation-summary="ModelOnly"></div>
+        <div>
+            <label asp-for="FirstName">First name</label>
+            <input asp-for="FirstName" required />
+            
+        </div>
+        <div>
+            <label asp-for="LastName">Last name</label>
+            <input asp-for="LastName" required />
+
+        </div>
+        <div>
+            <label asp-for="Email">E-mail</label>
+            <input asp-for="Email" required />
+
+        </div>
+        <div>
+            <label asp-for="PhoneNumber">Phone</label>
+            <input asp-for="PhoneNumber" />
+
+        </div>
+        <div>
+            <label asp-for="Password">Password</label>
+            <input asp-for="Password" required />
+
+        </div>
+        <div>
+            <label asp-for="ConfirmPassword">Re-enter password</label>
+            <input asp-for="ConfirmPassword" required />
+
+        </div>
+        <div>
+            <label asp-for="StreetName">Streetname</label>
+            <input asp-for="StreetName" />
+
+        </div>
+        <div>
+            <label asp-for="PostalCode">Postal code</label>
+            <input asp-for="PostalCode" />
+
+        </div>
+        <div>
+            <label asp-for="City">City</label>
+            <input asp-for="City" />
+
+        </div>
+        <div>
+            <button type="submit">Sign up</button>
+        </div>
+    </form>
+</div>

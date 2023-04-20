@@ -1,0 +1,8 @@
+﻿.index-main {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+}
+.index-main section h1 {
+  padding: 30px;
+}
