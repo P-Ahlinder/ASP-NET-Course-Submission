@@ -1,6 +1,6 @@
-﻿using CourseSubmission.Models.Entities;
-using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using CourseSubmission.Models.Entities;
 
 namespace CourseSubmission.Contexts;
 
@@ -13,6 +13,6 @@ public class IdentityContext : IdentityDbContext
     }
 
     public DbSet<UserProfileEntity> UserProfiles { get; set; }
-
+    public DbSet<ContactFormEntity>  ContacForms  { get; set; }
 
 }

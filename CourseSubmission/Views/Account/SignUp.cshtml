@@ -3,52 +3,54 @@
 
 <div class="signup-main">
     <h1>Sign up</h1>
-    <form method="post" >
+    <form method="post" novalidate>
         <div asp-validation-summary="ModelOnly"></div>
         <div>
             <label asp-for="FirstName">First name</label>
-            <input asp-for="FirstName" required />
+            <input asp-for="FirstName" />
+            <small><span asp-validation-for="FirstName"></span></small>
             
         </div>
         <div>
             <label asp-for="LastName">Last name</label>
-            <input asp-for="LastName" required />
+            <input asp-for="LastName" />
+            <small><span asp-validation-for="LastName"></span></small>
 
         </div>
         <div>
             <label asp-for="Email">E-mail</label>
-            <input asp-for="Email" required />
-
+            <input asp-for="Email" />
+            <small><span asp-validation-for="Email"></span></small>
         </div>
         <div>
             <label asp-for="PhoneNumber">Phone</label>
             <input asp-for="PhoneNumber" />
-
+            <small><span asp-validation-for="PhoneNumber"></span></small>
         </div>
         <div>
             <label asp-for="Password">Password</label>
-            <input asp-for="Password" required />
-
+            <input asp-for="Password" />
+            <small><span asp-validation-for="Password"></span></small>
         </div>
         <div>
             <label asp-for="ConfirmPassword">Re-enter password</label>
-            <input asp-for="ConfirmPassword" required />
-
+            <input asp-for="ConfirmPassword" />
+            <small><span asp-validation-for="ConfirmPassword"></span></small>
         </div>
         <div>
-            <label asp-for="StreetName">Streetname</label>
+            <label asp-for="StreetName">Street name</label>
             <input asp-for="StreetName" />
-
+            <small><span asp-validation-for="StreetName"></span></small>
         </div>
         <div>
             <label asp-for="PostalCode">Postal code</label>
             <input asp-for="PostalCode" />
-
+            <small><span asp-validation-for="PostalCode"></span></small>
         </div>
         <div>
             <label asp-for="City">City</label>
             <input asp-for="City" />
-
+            <small><span asp-validation-for="City"></span></small>
         </div>
         <div>
             <button type="submit">Sign up</button>

@@ -1,0 +1,31 @@
+﻿@model ContactFormVM
+
+<form method="post">
+    <div>
+        <label asp-for="FirstName">First name</label>
+        <input asp-for="FirstName" />
+        <small><span asp-validation-for="FirstName"></span></small>
+
+    </div>
+    <div>
+        <label asp-for="LastName">Last name</label>
+        <input asp-for="LastName" />
+        <small><span asp-validation-for="LastName"></span></small>
+
+    </div>
+    <div>
+        <label asp-for="Email">Email</label>
+        <input asp-for="Email" />
+        <small><span asp-validation-for="Email"></span></small>
+
+    </div>
+    <div>
+        <label asp-for="Message">Message</label>
+        <input asp-for="Message" />
+        <small><span asp-validation-for="Message"></span></small>
+        <div>
+            <button type="submit">Sign up</button>
+        </div>
+    </div>
+
+</form>
