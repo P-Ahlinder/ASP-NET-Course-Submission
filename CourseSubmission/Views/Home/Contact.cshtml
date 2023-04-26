@@ -1,6 +1,9 @@
 ﻿@model ContactFormVM
 
-<form method="post">
+<div class="contact-main">
+    <h1>Contact us</h1>
+    <p>Please use the form to contact us and we will come back to you asap!</p>
+<form method="post" class="contactform">
     <div>
         <label asp-for="FirstName">First name</label>
         <input asp-for="FirstName" />
@@ -24,8 +27,9 @@
         <input asp-for="Message" />
         <small><span asp-validation-for="Message"></span></small>
         <div>
-            <button type="submit">Sign up</button>
+            <button type="submit">Send</button>
         </div>
     </div>
 
 </form>
+</div>

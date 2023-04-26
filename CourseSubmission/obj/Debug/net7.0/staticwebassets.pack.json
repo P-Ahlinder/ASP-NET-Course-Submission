@@ -29,6 +29,18 @@
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
+      "Id": "C:\\Users\\ahlin\\Desktop\\Repos\\CourseSubmission\\CourseSubmission\\wwwroot\\scss\\contactform.css",
+      "PackagePath": "staticwebassets\\scss\\contactform.css"
+    },
+    {
+      "Id": "C:\\Users\\ahlin\\Desktop\\Repos\\CourseSubmission\\CourseSubmission\\wwwroot\\scss\\contactform.min.css",
+      "PackagePath": "staticwebassets\\scss\\contactform.min.css"
+    },
+    {
+      "Id": "C:\\Users\\ahlin\\Desktop\\Repos\\CourseSubmission\\CourseSubmission\\wwwroot\\scss\\contactform.scss",
+      "PackagePath": "staticwebassets\\scss\\contactform.scss"
+    },
+    {
       "Id": "C:\\Users\\ahlin\\Desktop\\Repos\\CourseSubmission\\CourseSubmission\\wwwroot\\scss\\footer.css",
       "PackagePath": "staticwebassets\\scss\\footer.css"
     },

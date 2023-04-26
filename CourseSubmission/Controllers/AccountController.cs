@@ -15,20 +15,11 @@ public class AccountController : Controller
     }
 
 
-
-
-
-
-
-
     [Authorize]
     public IActionResult Index()
     {
         return View();
     }
-
-
-
 
     public IActionResult SignUp()
     {

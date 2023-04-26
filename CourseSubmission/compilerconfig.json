@@ -22,5 +22,9 @@
   {
     "outputFile": "wwwroot/scss/signup.css",
     "inputFile": "wwwroot/scss/signup.scss"
+  },
+  {
+    "outputFile": "wwwroot/scss/contactform.css",
+    "inputFile": "wwwroot/scss/contactform.scss"
   }
 ]

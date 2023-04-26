@@ -9,9 +9,9 @@ public class AuthService
 {
 
     private readonly UserManager<IdentityUser> _userManager;
-    private readonly IdentityContext _identityContext;
+    private readonly AppDbContext _identityContext;
 
-    public AuthService(UserManager<IdentityUser> userManager, IdentityContext identityContext)
+    public AuthService(UserManager<IdentityUser> userManager, AppDbContext identityContext)
     {
         _userManager = userManager;
         _identityContext = identityContext;

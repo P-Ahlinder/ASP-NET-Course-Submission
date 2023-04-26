@@ -3,6 +3,7 @@
 @import '/scss/indexmain.css';
 @import '/scss/login.css';
 @import '/scss/signup.css';
+@import '/scss/contactform.css';
 @import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Asap:wght@200&display=swap");
 * {

@@ -18,6 +18,7 @@
   <ItemGroup>
     <Folder Include="Data\" />
     <Folder Include="wwwroot\icons\" />
+    <Folder Include="wwwroot\images\" />
   </ItemGroup>
 
   <ItemGroup>

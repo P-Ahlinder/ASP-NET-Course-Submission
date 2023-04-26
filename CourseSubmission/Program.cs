@@ -1,23 +1,13 @@
 using CourseSubmission.Contexts;
 using CourseSubmission.Services;
-using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
-builder.Services.AddDbContext<IdentityContext>(x => x.UseSqlServer(builder.Configuration.GetConnectionString("IdentityDatabase")));
-builder.Services.AddScoped<AuthService>();
-builder.Services.AddDefaultIdentity<IdentityUser>(x =>
-{
-    x.SignIn.RequireConfirmedAccount = false;
-    x.Password.RequiredLength = 8;
-    x.User.RequireUniqueEmail = false;
-}).AddEntityFrameworkStores<IdentityContext>();
 
 
-
-
-
+builder.Services.AddDbContext<DataDbContext>(x => x.UseSqlServer(builder.Configuration.GetConnectionString("IdentityDatabase")));
+builder.Services.AddScoped<ContactService>();
 
 
 var app = builder.Build();
