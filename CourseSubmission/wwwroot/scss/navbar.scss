@@ -2,10 +2,15 @@
 
 header {
     nav {
-        background-color: #a3a3a349;
+        background-color: #a3b18a;
         padding: 2rem 2rem;
         display: flex;
         justify-content: flex-end;
+
+        p {
+            margin-right: 20rem;
+            margin-top: .25rem;
+        }
 
         .links {
             transition: ease-in-out .2s;
@@ -24,10 +29,12 @@ header {
                 text-decoration: none;
                 color: grey;
                 font-family: 'Courgette', cursive;
-                font-size:18px;
-                &:hover{
-                    color:dimgrey;
-                    text-shadow:0px 1px 5px darkslategray;
+                font-size: 18px;
+                color: #344e41;
+
+                &:hover {
+                    color: dimgrey;
+                    text-shadow: 0px 1px 5px darkslategray;
                 }
             }
         }

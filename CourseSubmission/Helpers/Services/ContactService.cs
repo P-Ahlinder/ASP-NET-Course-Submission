@@ -1,14 +1,13 @@
 ﻿using CourseSubmission.Contexts;
 using CourseSubmission.Models.Entities;
 using CourseSubmission.ViewModels;
-using Microsoft.AspNetCore.Identity;
-namespace CourseSubmission.Services;
+namespace CourseSubmission.Helpers.Services;
 
 public class ContactService
 {
-    private readonly DataDbContext _contactContext;
+    private readonly DejjtabejjsContext _contactContext;
 
-    public ContactService(DataDbContext contactContext)
+    public ContactService(DejjtabejjsContext contactContext)
     {
         _contactContext = contactContext;
     }
@@ -19,7 +18,7 @@ public class ContactService
         try
         {
             ContactFormEntity contactFormEntity = model;
-           
+
             _contactContext.ContactForms.Add(contactFormEntity);
             await _contactContext.SaveChangesAsync();
 

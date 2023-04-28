@@ -1,4 +1,13 @@
-﻿@using CourseSubmission
+﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@using CourseSubmission
 @using CourseSubmission.ViewModels
+@using CourseSubmission.Models.Entities
+@using Microsoft.AspNetCore.Identity
+@using CourseSubmission.Models.Identity
 
-@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+@inject SignInManager<AppUser> signInManager
+@inject UserManager<AppUser> userManager
+
+
+

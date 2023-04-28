@@ -1,4 +1,4 @@
-﻿using CourseSubmission.Services;
+﻿using CourseSubmission.Helpers.Services;
 using CourseSubmission.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 namespace CourseSubmission.Controllers;

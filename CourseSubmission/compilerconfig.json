@@ -26,5 +26,9 @@
   {
     "outputFile": "wwwroot/scss/contactform.css",
     "inputFile": "wwwroot/scss/contactform.scss"
+  },
+  {
+    "outputFile": "wwwroot/scss/colors.css",
+    "inputFile": "wwwroot/scss/colors.scss"
   }
 ]

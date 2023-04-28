@@ -29,6 +29,18 @@
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
+      "Id": "C:\\Users\\ahlin\\Desktop\\Repos\\CourseSubmission\\CourseSubmission\\wwwroot\\scss\\colors.css",
+      "PackagePath": "staticwebassets\\scss\\colors.css"
+    },
+    {
+      "Id": "C:\\Users\\ahlin\\Desktop\\Repos\\CourseSubmission\\CourseSubmission\\wwwroot\\scss\\colors.min.css",
+      "PackagePath": "staticwebassets\\scss\\colors.min.css"
+    },
+    {
+      "Id": "C:\\Users\\ahlin\\Desktop\\Repos\\CourseSubmission\\CourseSubmission\\wwwroot\\scss\\colors.scss",
+      "PackagePath": "staticwebassets\\scss\\colors.scss"
+    },
+    {
       "Id": "C:\\Users\\ahlin\\Desktop\\Repos\\CourseSubmission\\CourseSubmission\\wwwroot\\scss\\contactform.css",
       "PackagePath": "staticwebassets\\scss\\contactform.css"
     },

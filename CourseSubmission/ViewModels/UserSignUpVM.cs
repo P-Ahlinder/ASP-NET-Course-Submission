@@ -1,5 +1,5 @@
 ﻿using CourseSubmission.Models.Entities;
-using Microsoft.AspNetCore.Identity;
+using CourseSubmission.Models.Identity;
 using System.ComponentModel.DataAnnotations;
 
 namespace CourseSubmission.ViewModels;
@@ -39,32 +39,41 @@ public class UserSignUpVM
 
 
     
-    public string? PhoneNumber { get; set; } 
-    public string? StreetName  { get; set; }
-    public string? PostalCode  { get; set; }
-    public string? City        { get; set; }
+    public string? PhoneNumber { get; set; }
+
+
+    [Required(ErrorMessage = "This field is requierd.")]
+    public string StreetName  { get; set; } = null!;
+    [Required(ErrorMessage = "This field is requierd.")]
+    public string PostalCode  { get; set; } = null!;
+    [Required(ErrorMessage = "This field is requierd.")]
+    public string City        { get; set; } = null!;
+    [Required(ErrorMessage = "This field is requierd.")]
+    public string Country { get; set; } = null!;
 
 
 
-    public static implicit operator IdentityUser(UserSignUpVM model)
+    public static implicit operator AppUser(UserSignUpVM model)
     {
-        return new IdentityUser
+
+        return new AppUser
         {
-            UserName    = model.Email,
-            Email       = model.Email,
-            PhoneNumber = model.PhoneNumber
+           UserName    = model.Email,
+           FirstName   = model.FirstName,
+           LastName    = model.LastName,
+           Email       = model.Email,
+           PhoneNumber = model.PhoneNumber,
         };
     }
 
-    public static implicit operator UserProfileEntity(UserSignUpVM model)
+    public static implicit operator AddressEntity(UserSignUpVM model)
     {
-        return new UserProfileEntity
+        return new AddressEntity
         {
-            FirstName   = model.FirstName,
-            LastName    = model.LastName,
-            StreetName  = model.StreetName,
-            PostalCode  = model.PostalCode,
-            City        = model.City
+            StreetName = model.StreetName,
+            PostalCode = model.PostalCode,
+            City       = model.City,
+            Country    = model.Country,
         };
     }
 

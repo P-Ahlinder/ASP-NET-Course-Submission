@@ -5,6 +5,7 @@
 @import '/scss/login.css';
 @import '/scss/signup.css';
 @import '/scss/contactform.css';
+@import '/scss/colors.css';
 @import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Asap:wght@200&display=swap');
 
@@ -13,14 +14,16 @@
     padding:0;
 }
 
-body{
-    background-color:lightgoldenrodyellow;
+body {
+    background-color: #dad7cd;
 }
 
 p {
     font-family: 'Asap', sans-serif;
+    color: #344e41;
 }
 
 h1 {
     font-family: 'Courgette', cursive;
+    color: #344e41;
 }

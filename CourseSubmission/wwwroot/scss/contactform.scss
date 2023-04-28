@@ -6,27 +6,41 @@
 }
 
 .contactform {
- margin-top:2%;
-    button{
-        width:250px;
-        height:30px;
-        margin-top:10px;
-        transition:ease .2s;
-        &:hover{
-            background-color:darkslategrey;
-            color:white;
-            border:none;
-            border-radius:8px;
+    margin-top: 2%;
+
+    button {
+        width: 250px;
+        height: 30px;
+        margin-top: 10px;
+        transition: ease .2s;
+
+        &:hover {
+            background-color: darkslategrey;
+            color: white;
+            border: none;
+            border-radius: 8px;
         }
     }
-    div{
-        display:flex;
-        flex-direction:column;
 
-        input{
-            height:30px;
-            width:450px;
-            margin-bottom:10px;
+    div {
+        display: flex;
+        flex-direction: column;
+
+        input {
+            width: 400px;
+            height: 22px;
+        }
+
+        label {
+            font-size: 16px;
+            font-weight: 700;
+            font-family: 'Asap', sans-serif;
+        }
+
+        input {
+            height: 30px;
+            width: 450px;
+            margin-bottom: 10px;
         }
     }
 }

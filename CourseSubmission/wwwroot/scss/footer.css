@@ -3,13 +3,13 @@
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: darkslategrey;
+  background-color: #3a5a40;
   height: 90px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 footer p {
-  color: gray;
+  color: #dad7cd;
   font-family: "Orbitron", sans-serif;
 }
