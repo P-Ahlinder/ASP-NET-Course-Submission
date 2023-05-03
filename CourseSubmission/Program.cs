@@ -6,18 +6,21 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
 
+
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 
 
 builder.Services.AddDbContext<DejjtabejjsContext>(x => x.UseSqlServer(builder.Configuration.GetConnectionString("IdentityDatabase")));
-builder.Services.AddScoped<ContactService>();
-builder.Services.AddScoped<AddressRepo>();
+builder.Services.AddScoped<AddressRepository>();
 builder.Services.AddScoped<UserAddressRepo>();
 builder.Services.AddScoped<AddressService>();
 builder.Services.AddScoped<AuthService>();
+builder.Services.AddScoped<SeedService>();
 
-builder.Services.AddIdentity<AppUser, IdentityRole>(x => 
+
+builder.Services.AddScoped<ContactService>();
+builder.Services.AddIdentity<AppUser, IdentityRole>(x =>
 {
     x.SignIn.RequireConfirmedAccount = false;
     x.User.RequireUniqueEmail = true;
@@ -26,8 +29,17 @@ builder.Services.AddIdentity<AppUser, IdentityRole>(x =>
     x.Password.RequiredLength = 1;
     x.Password.RequireDigit = false;
     x.Password.RequireUppercase = false;
-    
+
 }).AddEntityFrameworkStores<DejjtabejjsContext>();
+
+
+builder.Services.ConfigureApplicationCookie(x =>
+{
+    x.LoginPath = "/login";
+    x.LogoutPath = "/";
+    x.AccessDeniedPath = "/denied";
+});
+
 
 
 

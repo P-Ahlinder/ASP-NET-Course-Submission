@@ -3,7 +3,7 @@ using CourseSubmission.Models.Entities;
 
 namespace CourseSubmission.Helpers.Repos;
 
-public class UserAddressRepo : Repos<UserAddressEntity>
+public class UserAddressRepo : Repository<UserAddressEntity>
 {
     public UserAddressRepo(DejjtabejjsContext context) : base(context)
     {

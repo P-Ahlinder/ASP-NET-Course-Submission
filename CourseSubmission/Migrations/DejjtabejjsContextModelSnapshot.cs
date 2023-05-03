@@ -48,7 +48,7 @@ namespace CourseSubmission.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("AspNetAddress");
+                    b.ToTable("AspNetAddresses");
                 });
 
             modelBuilder.Entity("CourseSubmission.Models.Entities.ContactFormEntity", b =>
@@ -92,7 +92,7 @@ namespace CourseSubmission.Migrations
 
                     b.HasIndex("AddressId");
 
-                    b.ToTable("AspNetUserAddresses");
+                    b.ToTable("AspNetUsersAddresses");
                 });
 
             modelBuilder.Entity("CourseSubmission.Models.Identity.AppUser", b =>
@@ -102,9 +102,6 @@ namespace CourseSubmission.Migrations
 
                     b.Property<int>("AccessFailedCount")
                         .HasColumnType("int");
-
-                    b.Property<string>("CompanyName")
-                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ConcurrencyStamp")
                         .IsConcurrencyToken()
@@ -119,9 +116,6 @@ namespace CourseSubmission.Migrations
 
                     b.Property<string>("FirstName")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("ImgURL")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("LastName")

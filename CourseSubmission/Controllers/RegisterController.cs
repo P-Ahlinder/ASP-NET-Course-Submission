@@ -2,18 +2,23 @@
 using CourseSubmission.ViewModels;
 using Microsoft.AspNetCore.Identity;
 using CourseSubmission.Models.Identity;
+using CourseSubmission.Helpers.Services;
 
 namespace CourseSubmission.Controllers;
 
 public class RegisterController : Controller
 {
     private readonly UserManager<AppUser> _userManager;
+    private readonly AuthService _authService;
 
-    public RegisterController(UserManager<AppUser> userManager)
+    public RegisterController(UserManager<AppUser> userManager, AuthService authService)
     {
         _userManager = userManager;
+        _authService = authService;
     }
     
+
+   
 
     [HttpGet]
     public IActionResult Index()
@@ -28,12 +33,12 @@ public class RegisterController : Controller
     {
         if (ModelState.IsValid)
         {
-            if (await _userManager.FindByNameAsync(model.Email) == null)
-            {
-                var result = await _userManager.CreateAsync(model, model.Password);
-                if (result.Succeeded)
-                 return RedirectToAction("Index", "Login"); 
-            }
+            if (await _authService.UserAldredyExistsAsync(model))
+                ModelState.AddModelError("", "This email appear to be registred already..");
+
+            if(await _authService.RegisterUserAsync(model))
+            return RedirectToAction("Index", "Login"); 
+            
                 
             ModelState.AddModelError("", "This email appear to be registred already..");
         }

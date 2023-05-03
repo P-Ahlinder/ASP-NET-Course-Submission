@@ -10,19 +10,15 @@ public class UserSignUpVM
     public string FirstName { get; set; } = null!;
 
 
-
-
     [Required(ErrorMessage = "This field is requierd.")]
     public string LastName { get; set; } = null!;
-
-
 
 
     [Required(ErrorMessage = "This field is requierd.")]
     [DataType(DataType.EmailAddress)]
     public string Email { get; set; } = null!;
 
-
+    public string PhoneNumber { get; set; } = null!;
 
 
     [Required(ErrorMessage = "This field is requierd.")]
@@ -30,16 +26,10 @@ public class UserSignUpVM
     public string Password { get; set; } = null!;
 
 
-
-
     [Required(ErrorMessage ="This field is requierd.")]
     [DataType(DataType.Password)]
     [Compare(nameof(Password))]
     public string ConfirmPassword { get; set; } = null!;
-
-
-    
-    public string? PhoneNumber { get; set; }
 
 
     [Required(ErrorMessage = "This field is requierd.")]
@@ -62,7 +52,6 @@ public class UserSignUpVM
            FirstName   = model.FirstName,
            LastName    = model.LastName,
            Email       = model.Email,
-           PhoneNumber = model.PhoneNumber,
         };
     }
 

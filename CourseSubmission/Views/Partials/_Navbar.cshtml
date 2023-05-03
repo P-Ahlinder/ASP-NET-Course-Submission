@@ -2,14 +2,16 @@
 {
         <header>
             <nav>
-            <p>You are signed in as: @User.Identity.Name</p>
+            <p>You are signed in as:<a asp-controller="Account" asp-action="Index"> @User.Identity.Name</a></p>
                 <div class="links">
-                    <a asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                @if(signInManager.IsSignedIn(User) && User.IsInRole("admin"))
+                {
+                    <a asp-area="" asp-controller="Admin" asp-action="Index">Admin</a>
+                }
+                <a asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                     <a asp-area="" asp-controller="Home" asp-action="Products">Products</a>
                     <a asp-area="" asp-controller="Home" asp-action="Contact">Contact</a>
-                    <a asp-area="" asp-controller="Home" asp-action="Privacy"><img src="~/icons/loupe.png" /></a>
-                    <a asp-area="" asp-controller="Home" asp-action="Privacy"><img src="~/icons/shopping-bag.png" /></a>
-                <a asp-action="Index" asp-controller="Logout">Sign out</a>
+                    <a asp-action="Index" asp-controller="Logout">Sign out</a>
                 </div>
             </nav>
         </header>
@@ -23,8 +25,6 @@ else{
                 <a asp-area="" asp-controller="Home" asp-action="Products">Products</a>
                 <a asp-area="" asp-controller="Home" asp-action="Contact">Contact</a>
                 <a asp-area="" asp-controller="Login" asp-action="Index"><img src="~/icons/user.png" /></a>
-                <a asp-area="" asp-controller="Home" asp-action="Privacy"><img src="~/icons/loupe.png" /></a>
-                <a asp-area="" asp-controller="Home" asp-action="Privacy"><img src="~/icons/shopping-bag.png" /></a>
                 <a asp-action="Index" asp-controller="Register">Register</a>
             </div>
         </nav>
