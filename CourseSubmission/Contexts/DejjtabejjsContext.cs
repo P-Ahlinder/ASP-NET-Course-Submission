@@ -17,5 +17,6 @@ public class DejjtabejjsContext : IdentityDbContext<AppUser>
     public DbSet<ContactFormEntity> ContactForms { get; set; }
     public DbSet<AddressEntity> AspNetAddresses { get; set; }
     public DbSet<UserAddressEntity> AspNetUsersAddresses { get; set; }
+    public DbSet<ProductEntity> Products { get; set; }
 
 }

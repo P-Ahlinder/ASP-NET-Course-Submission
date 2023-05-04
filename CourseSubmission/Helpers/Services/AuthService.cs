@@ -32,12 +32,19 @@ public class AuthService
     public async Task<bool>RegisterUserAsync(UserSignUpVM model)
     {
             await _seedService.SeedRoles();
+            var roleName = "user";
 
-            AppUser appUser = model;
+            if (!await _userManager.Users.AnyAsync())
+            roleName = "admin";
+            
+
+        AppUser appUser = model;
 
             var result = await _userManager.CreateAsync(appUser, model.Password);
             if (result.Succeeded)
             {
+                await _userManager.AddToRoleAsync(appUser, roleName);
+
                 var addressEntity = await _addressService.GetOrCreateAsync(model);
                 if (addressEntity != null)
                 {
