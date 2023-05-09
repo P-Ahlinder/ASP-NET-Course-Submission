@@ -3,9 +3,14 @@
     flex-direction:column;
     place-items:center;
     
-    section{
-        h1{
-            padding:30px;
-        }
+    .featured{
+        margin-top:5rem;
+        display:flex;
+        justify-content:center;
+        background-color:grey;
+        width:100%;
+        height:362px;
     }
+
+
 }

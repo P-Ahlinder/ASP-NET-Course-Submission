@@ -29,6 +29,18 @@
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
+      "Id": "C:\\Users\\ahlin\\Desktop\\Repos\\CourseSubmission\\CourseSubmission\\wwwroot\\scss\\adminpanel.css",
+      "PackagePath": "staticwebassets\\scss\\adminpanel.css"
+    },
+    {
+      "Id": "C:\\Users\\ahlin\\Desktop\\Repos\\CourseSubmission\\CourseSubmission\\wwwroot\\scss\\adminpanel.min.css",
+      "PackagePath": "staticwebassets\\scss\\adminpanel.min.css"
+    },
+    {
+      "Id": "C:\\Users\\ahlin\\Desktop\\Repos\\CourseSubmission\\CourseSubmission\\wwwroot\\scss\\adminpanel.scss",
+      "PackagePath": "staticwebassets\\scss\\adminpanel.scss"
+    },
+    {
       "Id": "C:\\Users\\ahlin\\Desktop\\Repos\\CourseSubmission\\CourseSubmission\\wwwroot\\scss\\colors.css",
       "PackagePath": "staticwebassets\\scss\\colors.css"
     },
@@ -51,6 +63,18 @@
     {
       "Id": "C:\\Users\\ahlin\\Desktop\\Repos\\CourseSubmission\\CourseSubmission\\wwwroot\\scss\\contactform.scss",
       "PackagePath": "staticwebassets\\scss\\contactform.scss"
+    },
+    {
+      "Id": "C:\\Users\\ahlin\\Desktop\\Repos\\CourseSubmission\\CourseSubmission\\wwwroot\\scss\\featured.css",
+      "PackagePath": "staticwebassets\\scss\\featured.css"
+    },
+    {
+      "Id": "C:\\Users\\ahlin\\Desktop\\Repos\\CourseSubmission\\CourseSubmission\\wwwroot\\scss\\featured.min.css",
+      "PackagePath": "staticwebassets\\scss\\featured.min.css"
+    },
+    {
+      "Id": "C:\\Users\\ahlin\\Desktop\\Repos\\CourseSubmission\\CourseSubmission\\wwwroot\\scss\\featured.scss",
+      "PackagePath": "staticwebassets\\scss\\featured.scss"
     },
     {
       "Id": "C:\\Users\\ahlin\\Desktop\\Repos\\CourseSubmission\\CourseSubmission\\wwwroot\\scss\\footer.css",

@@ -1,0 +1,33 @@
+.featued-card-main {
+    display: flex;
+
+
+    .featured-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+
+        button {
+            margin-top: 1.5rem;
+            width: 30%;
+            height: 40px;
+            border: none;
+            border-radius: 5px;
+            background-color: white;
+            transition: ease .5s;
+            &:hover {
+                background-color: #808080;
+            }
+        }
+        h1 {
+            margin-top: 4rem;
+            text-align: center;
+            font-size: 80px;
+            color: black;
+        }
+    }
+    .img-container {
+        margin-right: 5rem;
+    }
+}

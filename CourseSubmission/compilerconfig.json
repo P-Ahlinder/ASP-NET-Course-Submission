@@ -30,5 +30,13 @@
   {
     "outputFile": "wwwroot/scss/colors.css",
     "inputFile": "wwwroot/scss/colors.scss"
+  },
+  {
+    "outputFile": "wwwroot/scss/adminpanel.css",
+    "inputFile": "wwwroot/scss/adminpanel.scss"
+  },
+  {
+    "outputFile": "wwwroot/scss/featured.css",
+    "inputFile": "wwwroot/scss/featured.scss"
   }
 ]

@@ -1,5 +1,16 @@
-﻿@model FeaturedVM
+﻿@model IEnumerable<ProductEntity>
 
 <section class="featued-card-main">
-    
+
+    @foreach (var item in Model)
+    {
+        <div class="featured-info">
+        <h1>Explore Gold Collection</h1>
+        <button>Learn more</button>
+        </div>
+
+        <div class="img-container">
+            <img src="@item.ImgUrl" />
+        </div>
+    }
 </section>

@@ -5,6 +5,8 @@
 @import '/scss/signup.css';
 @import '/scss/contactform.css';
 @import '/scss/colors.css';
+@import '/scss/adminpanel.css';
+@import '/scss/featured.css';
 @import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Asap:wght@200&display=swap");
 * {
@@ -13,15 +15,13 @@
 }
 
 body {
-  background-color: #dad7cd;
+  background-color: rgba(0, 0, 0, 0.1529411765);
 }
 
 p {
-  font-family: "Asap", sans-serif;
   color: #344e41;
 }
 
 h1 {
-  font-family: "Courgette", cursive;
   color: #344e41;
 }

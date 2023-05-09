@@ -3,7 +3,6 @@ using Microsoft.EntityFrameworkCore;
 using CourseSubmission.Models.Entities;
 using CourseSubmission.Models.Identity;
 
-
 namespace CourseSubmission.Contexts;
 
 public class DejjtabejjsContext : IdentityDbContext<AppUser>

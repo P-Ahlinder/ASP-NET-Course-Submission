@@ -1,17 +1,15 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
-    var featured = new FeaturedVM();
-    {
-        
-    }
+   
 }
 
 <main class="index-main">    
     <section>
-        <h1>Welcome to ShopLifter</h1>
+        <h1></h1>
     </section>
-    <section>
-        <partial name="/Views/Partials/_Featured.cshtml" model="@featured" />
+    
+    <section class="featured"> 
+        <partial name="~/Views/Partials/_Featured.cshtml" />
     </section>
 </main>
 
