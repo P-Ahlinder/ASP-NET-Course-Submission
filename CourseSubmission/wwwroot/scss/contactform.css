@@ -3,7 +3,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin-bottom: 20px;
   margin-top: 1rem;
 }
@@ -19,10 +18,7 @@
   width: 420px;
   height: 30px;
   margin: 1rem;
-  font-family: "Asap", sans-serif;
-  font-weight: 700;
   border-radius: 0.4rem;
-  border: none;
   transition: ease 0.2s;
 }
 .contactform div button:hover {
@@ -30,19 +26,15 @@
   background-color: dimgray;
 }
 .contactform div input {
-  width: 400px;
-  height: 22px;
+  width: 440px;
+  height: 25px;
+  border-radius: 2px;
+  border: none;
+  margin: 5px 0px;
+  padding: 0.2rem;
 }
 .contactform div label {
   font-size: 16px;
+  font-family: "M PLUS Rounded 1c", sans-serif;
   font-weight: 700;
-  font-family: "Asap", sans-serif;
-  padding: 0px 0px 2px 2px;
-}
-.contactform div input {
-  height: 30px;
-  width: 450px;
-  margin-bottom: 10px;
-  border: none;
-  border-radius: 2px;
 }

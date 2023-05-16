@@ -1,0 +1,13 @@
+﻿@model Product
+
+<div class="product-site">
+    <div>
+        <p>@Model.ProductName</p>
+        <p>Pris: @Model.Price.Value</p>
+        <br/>
+        <p>@Model.Description</p>
+     </div>
+     <div>
+        <img src="@Model.ImgUrl" />
+     </div>
+</div>

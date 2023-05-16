@@ -1,0 +1,11 @@
+﻿@model IEnumerable<ProductEntity>
+
+@foreach (var item in Model)
+{
+    <div>
+        <h1>@item.ProductName</h1>
+        <h1>@item.Price</h1>
+        <h1>@item.Description</h1>
+        <img src="@item.ImgUrl" />
+    </div>
+}

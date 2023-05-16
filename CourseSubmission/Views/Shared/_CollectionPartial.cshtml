@@ -1,0 +1,19 @@
+﻿@model ColletionVM
+
+<div>
+    <div>
+        <h1>@Model.Title</h1>
+        <div>
+            @foreach (var item in Model.Items)
+            {
+                <div>
+                    <a asp-action="Details" asp-controller="Products" asp-route-articleNumber="@item.ArticleNumber">@item.ProductName</a>
+                </div>
+            }
+
+        </div>
+    </div>
+</div>
+<div>
+    
+</div>

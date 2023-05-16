@@ -8,16 +8,16 @@
     a {
         color: black;
         font-size: 20px;
-        text-decoration:none;
-        font-weight:700;
-        &:hover{
-            text-decoration:underline;
+        text-decoration: none;
+        font-weight: 700;
+
+        &:hover {
+            text-decoration: underline;
         }
     }
 
     p {
         font-size: 20px;
-        font-family: 'Asap', sans-serif;
     }
 
     .form-container {
@@ -28,7 +28,6 @@
     .personal {
         h1 {
             font-size: 20px;
-            font-family: 'Asap', sans-serif;
         }
 
         display: flex;
@@ -46,7 +45,6 @@
     .address {
         h1 {
             font-size: 20px;
-            font-family: 'Asap', sans-serif;
         }
 
         display: flex;
@@ -55,7 +53,6 @@
     }
 
     h1 {
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         margin-bottom: 20px;
         margin-top: 1rem;
     }
@@ -80,20 +77,18 @@
         }
 
         label {
-            font-size: 16px;
+            font-family: 'M PLUS Rounded 1c', sans-serif;
             font-weight: 700;
-            font-family: 'Asap', sans-serif;
         }
 
         button {
             width: 420px;
             height: 30px;
             margin: 1rem;
-            font-family: 'Asap', sans-serif;
-            font-weight:700;
             border-radius: .40rem;
             border: none;
             transition: ease .2s;
+            font-family: 'Asap', sans-serif;
 
             &:hover {
                 opacity: 90%;

@@ -15,6 +15,7 @@ public class ProductEntity
     public decimal?  Price { get; set; }
     public string? ImgUrl { get; set; }
    
+    public ICollection<ProductTagEntity> Tags { get; set; } = new HashSet<ProductTagEntity>();
 }
 
 

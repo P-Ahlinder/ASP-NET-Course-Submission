@@ -1,15 +1,7 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-   
-}
+﻿@model HomeVM
 
-<main class="index-main">    
-    <section>
-        <h1></h1>
-    </section>
-    
-    <section class="featured"> 
-        <partial name="~/Views/Partials/_Featured.cshtml" />
-    </section>
-</main>
+@{ViewData["Title"] = "Home Page";}
+
+
+<partial name="_CollectionPartial" model="@Model.Featured"/>
 

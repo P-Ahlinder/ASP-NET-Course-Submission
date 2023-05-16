@@ -38,5 +38,9 @@
   {
     "outputFile": "wwwroot/scss/featured.css",
     "inputFile": "wwwroot/scss/featured.scss"
+  },
+  {
+    "outputFile": "wwwroot/scss/Product.css",
+    "inputFile": "wwwroot/scss/Product.scss"
   }
 ]

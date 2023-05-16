@@ -9,35 +9,25 @@
     }
 
     h1 {
-        font-family: 'Agency FB';
-        padding-top:20px;
+        padding-top: 20px;
     }
 
-    .profile{
-        margin-top:20px;
-        border-left:2px solid black;
-        
-        p{
-            font-weight:700;
-        }
+    .profile {
+        margin-top: 20px;
+        border-left: 2px solid black;
     }
 
     .admins {
         padding: 20px;
         margin: 1rem 7rem;
-       p{
-           font-weight:700;
-           
-       }
-
     }
 
     .users {
         padding: 20px;
         margin: 1rem 7rem;
 
-        p{
-            padding-left:10px;
+        p {
+            padding-left: 10px;
         }
     }
 }

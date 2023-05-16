@@ -14,7 +14,7 @@ header nav .links {
 }
 header nav .links img {
   transition: ease 0.2s;
-  width: 20px;
+  width: 25px;
 }
 header nav .links img:hover {
   scale: 1.5;
@@ -22,10 +22,9 @@ header nav .links img:hover {
 header nav .links a {
   margin: 0rem 1rem;
   text-decoration: none;
-  color: grey;
-  font-size: 18px;
+  font-size: 22px;
+  transition: ease 0.3s;
 }
 header nav .links a:hover {
-  color: dimgrey;
-  text-shadow: 0px 1px 5px darkslategray;
+  opacity: 50%;
 }

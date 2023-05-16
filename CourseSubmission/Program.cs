@@ -10,16 +10,25 @@ using Microsoft.EntityFrameworkCore;
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 
-
+//DB Connection
 builder.Services.AddDbContext<DejjtabejjsContext>(x => x.UseSqlServer(builder.Configuration.GetConnectionString("IdentityDatabase")));
-builder.Services.AddScoped<AddressRepository>();
-builder.Services.AddScoped<UserAddressRepo>();
+
+
+//Services
 builder.Services.AddScoped<AddressService>();
 builder.Services.AddScoped<AuthService>();
 builder.Services.AddScoped<SeedService>();
-
-
+builder.Services.AddScoped<ProductService>();
 builder.Services.AddScoped<ContactService>();
+
+
+//Repos
+builder.Services.AddScoped<ProductsRepository>();
+builder.Services.AddScoped<UserAddressRepo>();
+builder.Services.AddScoped<AddressRepository>();
+
+
+//Identity
 builder.Services.AddIdentity<AppUser, IdentityRole>(x =>
 {
     x.SignIn.RequireConfirmedAccount = false;

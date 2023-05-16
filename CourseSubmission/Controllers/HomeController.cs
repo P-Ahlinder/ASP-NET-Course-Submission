@@ -9,17 +9,30 @@ public class HomeController : Controller
 
     private readonly ContactService _contactService;
     private readonly DejjtabejjsContext _dejjtabejjsContext;
+    private readonly ProductService _productService;
 
-    public HomeController(ContactService contactService, DejjtabejjsContext dejjtabejjsContext)
+
+    public HomeController(ContactService contactService, DejjtabejjsContext dejjtabejjsContext, ProductService productService)
     {
         _contactService = contactService;
         _dejjtabejjsContext = dejjtabejjsContext;
+        _productService = productService;
     }
 
-    public IActionResult Index()
+    public async Task<IActionResult> Index()
     {
-        return View(_dejjtabejjsContext.Products.ToList());
+        var model = new HomeVM
+        {
+            Featured = new ColletionVM
+            {
+                Title = "Featured",
+                Items = await _productService.GetAllByTagNameAsync("featured")
+            }
+        };
+        return View(model);
     }
+
+
 
     public IActionResult Contact()
     {

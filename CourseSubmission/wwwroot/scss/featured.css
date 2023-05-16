@@ -5,6 +5,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: white;
 }
 .featued-card-main .featured-info button {
   margin-top: 1.5rem;
@@ -12,7 +13,7 @@
   height: 40px;
   border: none;
   border-radius: 5px;
-  background-color: white;
+  background-color: #bebebe;
   transition: ease 0.5s;
 }
 .featued-card-main .featured-info button:hover {

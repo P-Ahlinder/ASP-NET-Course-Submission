@@ -105,6 +105,38 @@ namespace CourseSubmission.Migrations
                     b.ToTable("Products");
                 });
 
+            modelBuilder.Entity("CourseSubmission.Models.Entities.ProductTagEntity", b =>
+                {
+                    b.Property<string>("ArticleNumber")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<int>("TagId")
+                        .HasColumnType("int");
+
+                    b.HasKey("ArticleNumber", "TagId");
+
+                    b.HasIndex("TagId");
+
+                    b.ToTable("ProductTags");
+                });
+
+            modelBuilder.Entity("CourseSubmission.Models.Entities.TagEntity", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("TagName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Tags");
+                });
+
             modelBuilder.Entity("CourseSubmission.Models.Entities.UserAddressEntity", b =>
                 {
                     b.Property<string>("UserId")
@@ -326,6 +358,25 @@ namespace CourseSubmission.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
+            modelBuilder.Entity("CourseSubmission.Models.Entities.ProductTagEntity", b =>
+                {
+                    b.HasOne("CourseSubmission.Models.Entities.ProductEntity", "Product")
+                        .WithMany("Tag")
+                        .HasForeignKey("ArticleNumber")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("CourseSubmission.Models.Entities.TagEntity", "Tag")
+                        .WithMany("Products")
+                        .HasForeignKey("TagId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Product");
+
+                    b.Navigation("Tag");
+                });
+
             modelBuilder.Entity("CourseSubmission.Models.Entities.UserAddressEntity", b =>
                 {
                     b.HasOne("CourseSubmission.Models.Entities.AddressEntity", "Address")
@@ -399,6 +450,16 @@ namespace CourseSubmission.Migrations
             modelBuilder.Entity("CourseSubmission.Models.Entities.AddressEntity", b =>
                 {
                     b.Navigation("Users");
+                });
+
+            modelBuilder.Entity("CourseSubmission.Models.Entities.ProductEntity", b =>
+                {
+                    b.Navigation("Tag");
+                });
+
+            modelBuilder.Entity("CourseSubmission.Models.Entities.TagEntity", b =>
+                {
+                    b.Navigation("Products");
                 });
 
             modelBuilder.Entity("CourseSubmission.Models.Identity.AppUser", b =>

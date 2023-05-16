@@ -29,6 +29,14 @@
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
+      "Id": "C:\\Users\\ahlin\\Desktop\\Repos\\CourseSubmission\\CourseSubmission\\wwwroot\\scss\\Product.css",
+      "PackagePath": "staticwebassets\\scss\\Product.css"
+    },
+    {
+      "Id": "C:\\Users\\ahlin\\Desktop\\Repos\\CourseSubmission\\CourseSubmission\\wwwroot\\scss\\Product.min.css",
+      "PackagePath": "staticwebassets\\scss\\Product.min.css"
+    },
+    {
       "Id": "C:\\Users\\ahlin\\Desktop\\Repos\\CourseSubmission\\CourseSubmission\\wwwroot\\scss\\adminpanel.css",
       "PackagePath": "staticwebassets\\scss\\adminpanel.css"
     },
@@ -119,6 +127,10 @@
     {
       "Id": "C:\\Users\\ahlin\\Desktop\\Repos\\CourseSubmission\\CourseSubmission\\wwwroot\\scss\\navbar.scss",
       "PackagePath": "staticwebassets\\scss\\navbar.scss"
+    },
+    {
+      "Id": "C:\\Users\\ahlin\\Desktop\\Repos\\CourseSubmission\\CourseSubmission\\wwwroot\\scss\\product.scss",
+      "PackagePath": "staticwebassets\\scss\\product.scss"
     },
     {
       "Id": "C:\\Users\\ahlin\\Desktop\\Repos\\CourseSubmission\\CourseSubmission\\wwwroot\\scss\\signup.css",

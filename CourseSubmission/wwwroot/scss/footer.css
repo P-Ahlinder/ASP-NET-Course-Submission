@@ -3,12 +3,9 @@
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: darkgray;
+  background-color: none;
   height: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-footer p {
-  color: black;
 }
