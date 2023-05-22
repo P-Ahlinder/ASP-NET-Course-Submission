@@ -1,11 +1,25 @@
 ﻿@model IEnumerable<ProductEntity>
 
+<div class="product-main">
+<h1>Products</h1>
+    <div class="products-body"> 
+    
 @foreach (var item in Model)
 {
-    <div>
-        <h1>@item.ProductName</h1>
-        <h1>@item.Price</h1>
-        <h1>@item.Description</h1>
-        <img src="@item.ImgUrl" />
+    <div class="product-card">
+        <div class="img-container">
+            <img src="@item.ImgUrl" />
+        </div>
+        <div class="product-info">
+            <p>@item.ProductName</p>
+                <p>Price:<span> @item.Price.ToString()!.Remove(item.Price.ToString()!.Length - 2) kr</span></p>
+        </div>
+        <div class="read-more">
+            <a asp-action="Details" asp-controller="Products" asp-route-articleNumber="@item.ArticleNumber">Read more</a>
+        </div>
     </div>
+        
+        
 }
+    </div>
+</div>

@@ -41,17 +41,12 @@ builder.Services.AddIdentity<AppUser, IdentityRole>(x =>
 
 }).AddEntityFrameworkStores<DejjtabejjsContext>();
 
-
 builder.Services.ConfigureApplicationCookie(x =>
 {
     x.LoginPath = "/login";
     x.LogoutPath = "/";
     x.AccessDeniedPath = "/denied";
 });
-
-
-
-
 
 var app = builder.Build();
 app.UseHsts();

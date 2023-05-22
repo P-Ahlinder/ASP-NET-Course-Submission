@@ -1,5 +1,4 @@
-﻿using CourseSubmission.Contexts;
-using CourseSubmission.Helpers.Services;
+﻿using CourseSubmission.Helpers.Services;
 using CourseSubmission.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 namespace CourseSubmission.Controllers;
@@ -8,14 +7,12 @@ public class HomeController : Controller
 {
 
     private readonly ContactService _contactService;
-    private readonly DejjtabejjsContext _dejjtabejjsContext;
     private readonly ProductService _productService;
 
 
-    public HomeController(ContactService contactService, DejjtabejjsContext dejjtabejjsContext, ProductService productService)
+    public HomeController(ContactService contactService, ProductService productService)
     {
         _contactService = contactService;
-        _dejjtabejjsContext = dejjtabejjsContext;
         _productService = productService;
     }
 
@@ -27,6 +24,11 @@ public class HomeController : Controller
             {
                 Title = "Featured",
                 Items = await _productService.GetAllByTagNameAsync("featured")
+            },
+            Popular = new PopularVM
+            {
+                Title = "Popular products",
+                Items = await _productService.GetAllByTagNameAsync("popular")
             }
         };
         return View(model);

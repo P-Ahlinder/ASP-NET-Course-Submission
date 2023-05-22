@@ -97,18 +97,6 @@
       "PackagePath": "staticwebassets\\scss\\footer.scss"
     },
     {
-      "Id": "C:\\Users\\ahlin\\Desktop\\Repos\\CourseSubmission\\CourseSubmission\\wwwroot\\scss\\indexmain.css",
-      "PackagePath": "staticwebassets\\scss\\indexmain.css"
-    },
-    {
-      "Id": "C:\\Users\\ahlin\\Desktop\\Repos\\CourseSubmission\\CourseSubmission\\wwwroot\\scss\\indexmain.min.css",
-      "PackagePath": "staticwebassets\\scss\\indexmain.min.css"
-    },
-    {
-      "Id": "C:\\Users\\ahlin\\Desktop\\Repos\\CourseSubmission\\CourseSubmission\\wwwroot\\scss\\indexmain.scss",
-      "PackagePath": "staticwebassets\\scss\\indexmain.scss"
-    },
-    {
       "Id": "C:\\Users\\ahlin\\Desktop\\Repos\\CourseSubmission\\CourseSubmission\\wwwroot\\scss\\login.css",
       "PackagePath": "staticwebassets\\scss\\login.css"
     },
@@ -127,6 +115,30 @@
     {
       "Id": "C:\\Users\\ahlin\\Desktop\\Repos\\CourseSubmission\\CourseSubmission\\wwwroot\\scss\\navbar.scss",
       "PackagePath": "staticwebassets\\scss\\navbar.scss"
+    },
+    {
+      "Id": "C:\\Users\\ahlin\\Desktop\\Repos\\CourseSubmission\\CourseSubmission\\wwwroot\\scss\\popular.css",
+      "PackagePath": "staticwebassets\\scss\\popular.css"
+    },
+    {
+      "Id": "C:\\Users\\ahlin\\Desktop\\Repos\\CourseSubmission\\CourseSubmission\\wwwroot\\scss\\popular.min.css",
+      "PackagePath": "staticwebassets\\scss\\popular.min.css"
+    },
+    {
+      "Id": "C:\\Users\\ahlin\\Desktop\\Repos\\CourseSubmission\\CourseSubmission\\wwwroot\\scss\\popular.scss",
+      "PackagePath": "staticwebassets\\scss\\popular.scss"
+    },
+    {
+      "Id": "C:\\Users\\ahlin\\Desktop\\Repos\\CourseSubmission\\CourseSubmission\\wwwroot\\scss\\product-page.css",
+      "PackagePath": "staticwebassets\\scss\\product-page.css"
+    },
+    {
+      "Id": "C:\\Users\\ahlin\\Desktop\\Repos\\CourseSubmission\\CourseSubmission\\wwwroot\\scss\\product-page.min.css",
+      "PackagePath": "staticwebassets\\scss\\product-page.min.css"
+    },
+    {
+      "Id": "C:\\Users\\ahlin\\Desktop\\Repos\\CourseSubmission\\CourseSubmission\\wwwroot\\scss\\product-page.scss",
+      "PackagePath": "staticwebassets\\scss\\product-page.scss"
     },
     {
       "Id": "C:\\Users\\ahlin\\Desktop\\Repos\\CourseSubmission\\CourseSubmission\\wwwroot\\scss\\product.scss",

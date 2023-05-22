@@ -1,13 +1,18 @@
 ﻿@model Product
 
-<div class="product-site">
-    <div>
-        <p>@Model.ProductName</p>
-        <p>Pris: @Model.Price.Value</p>
-        <br/>
-        <p>@Model.Description</p>
-     </div>
-     <div>
-        <img src="@Model.ImgUrl" />
-     </div>
+<div class="product-site-body">
+    <div class="product-site">
+        <div>
+            <p>@Model.ProductName</p>
+            <p>
+                Price: @Model.Price.ToString()!.Remove(Model.Price.ToString()!.Length - 2) kr
+            </p>
+            <br/>
+            <p>Produktbeskrivning:<br />@Model.Description</p>
+        </div>
+        <div>
+            <img src="@Model.ImgUrl" />
+        </div>
+    </div>
+    <a asp-action="Index" asp-controller="Home">Return</a>
 </div>

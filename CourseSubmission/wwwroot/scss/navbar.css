@@ -3,16 +3,23 @@ header nav {
   background-color: rgba(128, 128, 128, 0.4);
   padding: 2rem 2rem;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav svg {
+  width: 400px;
+  height: 70px;
+  transition: ease 1s;
 }
 header nav p {
   margin-right: 20rem;
-  margin-top: 0.25rem;
+  margin-top: 0.2rem;
 }
 header nav .links {
   transition: ease-in-out 0.2s;
 }
 header nav .links img {
+  margin-bottom: -5px;
   transition: ease 0.2s;
   width: 25px;
 }
@@ -27,4 +34,7 @@ header nav .links a {
 }
 header nav .links a:hover {
   opacity: 50%;
+}
+header nav:hover svg {
+  rotate: 360deg;
 }

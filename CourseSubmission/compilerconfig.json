@@ -42,5 +42,13 @@
   {
     "outputFile": "wwwroot/scss/Product.css",
     "inputFile": "wwwroot/scss/Product.scss"
+  },
+  {
+    "outputFile": "wwwroot/scss/product-page.css",
+    "inputFile": "wwwroot/scss/product-page.scss"
+  },
+  {
+    "outputFile": "wwwroot/scss/popular.css",
+    "inputFile": "wwwroot/scss/popular.scss"
   }
 ]

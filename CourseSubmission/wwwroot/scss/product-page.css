@@ -1,0 +1,27 @@
+﻿.product-site {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+}
+.product-site div {
+  max-width: 500px;
+  padding: 2rem 5rem;
+}
+
+.product-site-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.product-site-body a {
+  text-decoration: none;
+  background-color: orange;
+  padding: 10px;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: 700;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}

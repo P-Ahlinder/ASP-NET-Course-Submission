@@ -1,0 +1,16 @@
+﻿@model PopularVM
+
+<div>
+    <div class="popular-container">
+        <h1>Big savings on monitors</h1>
+        <div class="popular-main">
+            @foreach (var item in Model.Items.Take(3))
+            {
+                <div>
+                    <img src="@item.ImgUrl" />
+                </div>
+            }
+        </div>
+        <a asp-action="Index" asp-controller="Products">View all products</a>
+    </div>
+</div>

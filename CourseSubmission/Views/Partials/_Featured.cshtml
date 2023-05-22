@@ -1,14 +1,12 @@
 ﻿@model IEnumerable<ProductEntity>
 
 <section class="featued-card-main">
-
     @foreach (var item in Model)
     {
         <div class="featured-info">
         <h1>Laptop weeks</h1>
         <button>View more</button>
         </div>
-
         <div class="img-container">
             <img src="@item.ImgUrl" />
         </div>

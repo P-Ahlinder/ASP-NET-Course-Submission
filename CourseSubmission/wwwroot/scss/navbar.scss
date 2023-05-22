@@ -5,17 +5,25 @@ header {
         background-color: #80808066;
         padding: 2rem 2rem;
         display: flex;
-        justify-content: flex-end;
+        justify-content: space-between;
+        align-items:center;
+
+        svg {
+            width: 400px;
+            height: 70px;
+            transition: ease 1s;
+        }
 
         p {
             margin-right: 20rem;
-            margin-top: .25rem;
+            margin-top: .20rem;
         }
 
         .links {
             transition: ease-in-out .2s;
 
             img {
+                margin-bottom: -5px;
                 transition: ease .2s;
                 width: 25px;
 
@@ -28,10 +36,17 @@ header {
                 margin: 0rem 1rem;
                 text-decoration: none;
                 font-size: 22px;
-                transition:ease .3s;
+                transition: ease .3s;
+
                 &:hover {
-                    opacity:50%;
+                    opacity: 50%;
                 }
+            }
+        }
+
+        &:hover {
+            svg {
+                rotate: 360deg;
             }
         }
     }

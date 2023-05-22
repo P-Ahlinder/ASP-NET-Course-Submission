@@ -1,19 +1,21 @@
 ﻿@model ColletionVM
 
-<div>
-    <div>
-        <h1>@Model.Title</h1>
-        <div>
-            @foreach (var item in Model.Items)
+<div class="featured-body">
+    <h1>Welcome to<br /><span>ShopLifter</span></h1>
+    <div class="featured-container">
+        
+        <div class="featured-main">
+            @foreach (var item in Model.Items.TakeLast(1))
             {
+                <div class="featured-info">
+                    <h1>Explore the brand new</h1>
+                    <h1>MacBook Pro</h1>
+                    <a asp-action="Details" asp-controller="Products" asp-route-articleNumber="@item.ArticleNumber">Learn more</a>
+                </div>
                 <div>
-                    <a asp-action="Details" asp-controller="Products" asp-route-articleNumber="@item.ArticleNumber">@item.ProductName</a>
+                    <img src="@item.ImgUrl" />
                 </div>
             }
-
         </div>
     </div>
-</div>
-<div>
-    
 </div>

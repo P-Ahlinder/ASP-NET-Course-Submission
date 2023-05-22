@@ -1,6 +1,5 @@
 ﻿@import '/scss/footer.css';
 @import '/scss/navbar.css';
-@import '/scss/indexmain.css';
 @import '/scss/login.css';
 @import '/scss/signup.css';
 @import '/scss/contactform.css';
@@ -8,11 +7,17 @@
 @import '/scss/adminpanel.css';
 @import '/scss/featured.css';
 @import '/scss/Product.css';
+@import '/scss/product-page.css';
+@import '/scss/popular.css';
 @import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100&display=swap");
 * {
   margin: 0;
   padding: 0;
+}
+
+.container {
+  margin: 0rem 0rem;
 }
 
 body {
@@ -36,5 +41,8 @@ a {
 }
 
 button {
-  border: 1px solid black;
+  border: none;
+}
+button:hover {
+  cursor: pointer;
 }
