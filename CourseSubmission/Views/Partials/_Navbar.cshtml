@@ -2,7 +2,7 @@
 {
         <header>
             <nav>
-            <p>You are signed in as:<a asp-controller="Account" asp-action="Index"> @User.Identity.Name</a></p>
+            <p>You are signed in as:<a asp-controller="Admin" asp-action="Index"> @User.Identity.Name</a></p>
                 <div class="links">
                 @if(signInManager.IsSignedIn(User) && User.IsInRole("admin"))
                 {
